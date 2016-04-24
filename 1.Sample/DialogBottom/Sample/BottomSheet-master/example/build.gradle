@@ -1,0 +1,38 @@
+apply from: 'https://raw.githubusercontent.com/soarcn/gradle/master/android.gradle'
+
+dependencies {
+    compile project(':library')
+    compile 'com.cocosw:query:0.2.2'
+    compile 'com.android.support:appcompat-v7:22.1.1'
+
+//    androidTestCompile ('com.android.support.test.espresso:espresso-core:+') {
+//        exclude module: 'support-annotations'
+//    }
+//    androidTestCompile ('com.android.support.test:testing-support-lib:+') {
+//        exclude module: 'support-annotations'
+//    }
+}
+
+
+android {
+
+    defaultConfig {
+        minSdkVersion 9
+  //      testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    packagingOptions {
+        exclude 'LICENSE.txt'
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+        }
+        release{
+            minifyEnabled true
+            shrinkResources true
+            proguardFile 'proguard.cfg'
+        }
+    }
+}

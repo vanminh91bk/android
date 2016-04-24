@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Alarm Traffic Jam</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="connect">Connect</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_signup">Signup</string>
+    <string name="title_activity_send_report">Send Report</string>
+    <string name="send">Send</string>
+    <string-array name="planets_array">
+        <item>Good</item>
+        <item>Light Jam</item>
+        <item>Jam</item>
+        <item>Heavy Jam</item>
+    </string-array>
+    <string name="share">Share</string>
+    <string name="upload">Upload</string>
+    <string name="copy">Copy</string>
+    <string name="print">Print this page</string>
+    <string name="call">Call</string>
+    <string name="help">Help</string>
+    <string name="bottomsheet">BottomSheet Sample</string>
+</resources>

@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+
+dependencies {
+    compile files('D:\\Dropbox\\Workspace\\My Project\\Java\\2.Netbeen\\Library_AlarmTrafficJam\\dist\\Library_AlarmTrafficJam.jar')
+    compile files('libs/gson-2.2.4.jar')
+    compile files('libs/apache-httpcomponents-httpcore.jar')
+    compile files('libs/httpclient-4.0.3.jar')
+    compile files('libs/gdirectionsapiutils_gps4030500.jar')
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.google.android.gms:play-services:8.3.0'
+    compile 'com.google.android.gms:play-services-ads:8.3.0'
+    compile 'com.google.android.gms:play-services-identity:8.3.0'
+    compile 'com.google.android.gms:play-services-gcm:8.3.0'
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'com.nispok:snackbar:2.11.0'
+    compile 'com.jakewharton:butterknife:6.1.0'
+    compile project(':bottomsheet')
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "minh.thuan.alarmtrafficjam"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+android {
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

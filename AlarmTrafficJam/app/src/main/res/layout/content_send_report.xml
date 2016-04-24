@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/fgmap"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="250dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="24dp">
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgUser"
+                    android:alpha="0.5"
+                    android:src="@drawable/ic_person_pin_black_24dp"
+                    android:layout_centerVertical="true" />
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_alignLeft="@id/imgUser"
+                    android:id="@+id/txtUser"
+                    android:enabled="false"
+                    android:layout_marginLeft="50dp"
+                    android:layout_gravity="center_horizontal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgLocation"
+                    android:alpha="0.5"
+                    android:src="@drawable/ic_room_black_24dp"
+                    android:layout_centerVertical="true" />
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:enabled="false"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_alignLeft="@id/imgLocation"
+                    android:id="@+id/txtLocation"
+                    android:layout_marginLeft="50dp"
+                    android:layout_gravity="center_horizontal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgReport"
+                    android:alpha="0.5"
+                    android:src="@drawable/ic_report_problem_black_24dp"
+                    android:layout_centerVertical="true" />
+                <Spinner
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spLevel"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_alignLeft="@id/imgReport"
+                    android:layout_marginLeft="50dp"
+                    android:layout_gravity="center_horizontal" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgMes"
+                    android:alpha="0.5"
+                    android:src="@drawable/ic_message_black_24dp"
+                    android:layout_centerVertical="true" />
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_alignLeft="@id/imgMes"
+                    android:id="@+id/txtComment"
+                    android:layout_marginLeft="50dp"
+                    android:inputType="textMultiLine"
+                    android:layout_gravity="center_horizontal" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
